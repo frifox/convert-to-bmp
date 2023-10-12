@@ -40,11 +40,6 @@ func init() {
 	flag.Float64Var(&strength, "d", 1, "Dithering strength 0.0 to 1.0")
 	flag.Parse()
 
-	outFiles := strings.Split(inFile, ".")
-	outFiles = outFiles[:len(outFiles)-1]
-	outFile = strings.Join(outFiles, ".")
-	outFile += "-out.bmp"
-
 	if _, err := os.Stat(inFile); err != nil {
 		_, bin := filepath.Split(os.Args[0])
 		fmt.Printf("Input file not found.\n\n")
@@ -52,6 +47,11 @@ func init() {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
+
+	outFiles := strings.Split(inFile, ".")
+	outFiles = outFiles[:len(outFiles)-1]
+	outFile = strings.Join(outFiles, ".")
+	outFile += "-out.bmp"
 }
 
 func main() {
