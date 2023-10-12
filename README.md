@@ -2,14 +2,9 @@
 
 App to convert a JPG/PNG/GIF image to a BMP file which then can be used with [Waveshare's ACeP 7-Color E-Paper Wood Frame (PhotoPainter)](https://www.waveshare.com/photopainter.htm)
 
-    # install app
     go install github.com/frifox/convert-to-bmp@latest
-
-    # convert source image to bmp
     convert-to-bmp -i image.jpg
-
-    # copy generated image to sdcard
-    cp image-out.bmp /mnt/my-sd-card
+    cp image-out.bmp /mnt/my-sd-card/pic
 
 ## Usage
     convert-to-bmp [options]
