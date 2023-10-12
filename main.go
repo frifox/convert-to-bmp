@@ -17,7 +17,7 @@ import (
 	"strings"
 )
 
-var palette = []color.Color{
+var palette = color.Palette{
 	color.RGBA{0, 0, 0, 255}, color.RGBA{255, 255, 255, 255}, // Black, White,
 	color.RGBA{0, 255, 0, 255}, color.RGBA{0, 0, 255, 255}, color.RGBA{255, 0, 0, 255}, // Green, Blue, Red
 	color.RGBA{255, 255, 0, 255}, color.RGBA{255, 128, 0, 255}, // Yellow, Orange
