@@ -1,4 +1,4 @@
-module convert-to-bmp
+module github.com/frifox/convert-to-bmp
 
 go 1.21
 
